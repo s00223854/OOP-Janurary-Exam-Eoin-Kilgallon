@@ -10,7 +10,6 @@ namespace OOP_Janurary_Exam_Eoin_Kilgallon
     {
         //Team Propertys
 
-        List<Player> players;
 
         public String TeamName { get; set; }
     }

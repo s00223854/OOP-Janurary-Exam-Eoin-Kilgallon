@@ -18,11 +18,13 @@ namespace OOP_Janurary_Exam_Eoin_Kilgallon
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+  
+
     /// Link to Github - https://github.com/s00223854/OOP-Janurary-Exam-Eoin-Kilgallon
     public partial class MainWindow : Window
     {
        
-
+        //teams
         Team t1 = new Team() { TeamName = "France" };
         Team t2 = new Team() { TeamName = "Italy" };
         Team t3 = new Team() { TeamName = "Spain" };
@@ -60,10 +62,33 @@ namespace OOP_Janurary_Exam_Eoin_Kilgallon
             AllTeams.Add(t3);
 
             LbxTeams.ItemsSource = AllTeams;
+            
+            //Adding players to teams
+            List<Player> FrenchPlayers = new List<Player>();
+
+            FrenchPlayers.Add(p1);
+            FrenchPlayers.Add(p2);
+            FrenchPlayers.Add(p3);
+
+            List<Player> ItalianPlayers = new List<Player>();
+
+            ItalianPlayers.Add(p4);
+            ItalianPlayers.Add(p5);
+            ItalianPlayers.Add(p6);
+
+            List<Player> SpanishPlayers = new List<Player>();
+
+            SpanishPlayers.Add(p7);
+            SpanishPlayers.Add(p8);
+            SpanishPlayers.Add(p9);
+
 
             //displaying players
+            if (t1.)
+            {
 
-            
+            }
+
         }
 
         
