@@ -84,9 +84,11 @@ namespace OOP_Janurary_Exam_Eoin_Kilgallon
 
 
             //displaying players
-            if (t1.)
-            {
+           
 
+            if (LbxPlayers.SelectedItem == t1)
+            {
+                LbxPlayers.ItemsSource = FrenchPlayers;
             }
 
         }
