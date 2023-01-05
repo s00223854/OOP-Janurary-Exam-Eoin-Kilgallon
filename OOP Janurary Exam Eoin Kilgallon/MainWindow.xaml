@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_Janurary_Exam_Eoin_Kilgallon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <TextBlock x:Name="TblkTeams" HorizontalAlignment="Left" Margin="169,98,0,0" TextWrapping="Wrap" Text="Teams" VerticalAlignment="Top"/>
         <TextBlock x:Name="TblkPlayers" HorizontalAlignment="Left" Margin="478,101,0,0" TextWrapping="Wrap" Text="Players" VerticalAlignment="Top"/>
-        <ListBox x:Name="LstBxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="169,128,467,143"/>
+        <ListBox x:Name="LbxTeams" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="169,128,467,143"/>
         <ListBox x:Name="LstBxPlayers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="478,128,157,143"/>
         <TextBlock x:Name="TblkTitle" HorizontalAlignment="Center" Margin="0,55,0,0" TextWrapping="Wrap" Text="Tiddlywinks World Cup" VerticalAlignment="Top" Height="19" Width="139" TextAlignment="Center"/>
         <TextBlock x:Name="TblkPlayerRating" HorizontalAlignment="Left" Margin="706,104,0,0" TextWrapping="Wrap" Text="Player Rating" VerticalAlignment="Top"/>

@@ -21,9 +21,51 @@ namespace OOP_Janurary_Exam_Eoin_Kilgallon
     /// Link to Github - https://github.com/s00223854/OOP-Janurary-Exam-Eoin-Kilgallon
     public partial class MainWindow : Window
     {
+       
+
+        Team t1 = new Team() { TeamName = "France" };
+        Team t2 = new Team() { TeamName = "Italy" };
+        Team t3 = new Team() { TeamName = "Spain" };
+
+
+        //French players
+        Player p1 = new Player() { Name = "Marie", ResultRecord = "WWDDL" };
+        Player p2 = new Player() { Name = "Claude", ResultRecord = "DDDLW" };
+        Player p3 = new Player() { Name = "Antoine", ResultRecord = "LWDLW" };
+
+        //Italian players
+        Player p4 = new Player() { Name = "Marco", ResultRecord = "WWDLL" };
+        Player p5 = new Player() { Name = "Giovanni", ResultRecord = "LLLLD" };
+        Player p6 = new Player() { Name = "Valentina", ResultRecord = "DLWWW" };
+
+        //Spanish players
+        Player p7 = new Player() { Name = "Maria", ResultRecord = "WWWWW" };
+        Player p8 = new Player() { Name = "Jose", ResultRecord = "LLLLL" };
+        Player p9 = new Player() { Name = "Pablo", ResultRecord = "DDDDD" };
+
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //displaying teams
+
+            List<Team> AllTeams = new List<Team>();
+
+            AllTeams.Add(t1);
+            AllTeams.Add(t2);
+            AllTeams.Add(t3);
+
+            LbxTeams.ItemsSource = AllTeams;
+
+            //displaying players
+
+            
+        }
+
+        
     }
 }
